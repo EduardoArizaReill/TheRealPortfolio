@@ -2,36 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Personal Portfolio</title>
 
-  <!-- CSS correcto (tu archivo es styles.css, no style.css) -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="./styles.css?v=2" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
-
-  <!-- Ionicons (necesario para <ion-icon>) -->
+  <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  <!-- Tu JS -->
-  <script src="script.js" defer></script>
+  <!-- JS -->
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <main>
-    <!-- ===== SIDEBAR ===== -->
+    <!-- ===== Sidebar ===== -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="https://i.postimg.cc/JzBWVhW4/my-avatar.png" alt="avatar" width="80">
         </figure>
-
         <div class="info-content">
-          <h1 class="name" title="Richard Hanrick">Richard Hanrick</h1>
+          <h1 class="name">Richard Hanrick</h1>
           <p class="title">Web Developer</p>
         </div>
-
         <button class="info-more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
@@ -40,16 +35,14 @@
 
       <div class="sidebar-info-more">
         <div class="separator"></div>
-
         <ul class="contacts-list">
           <li class="contact-item">
             <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a href="mailto:richard@example.com" class="contact-link">richardexample.com</a>
+              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
             </div>
           </li>
-
           <li class="contact-item">
             <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
             <div class="contact-info">
@@ -57,7 +50,6 @@
               <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
             </div>
           </li>
-
           <li class="contact-item">
             <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
             <div class="contact-info">
@@ -65,7 +57,6 @@
               <time datetime="1982-06-23">June 23, 1982</time>
             </div>
           </li>
-
           <li class="contact-item">
             <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
             <div class="contact-info">
@@ -74,9 +65,7 @@
             </div>
           </li>
         </ul>
-
         <div class="separator"></div>
-
         <ul class="social-list">
           <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
           <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
@@ -85,8 +74,9 @@
       </div>
     </aside>
 
+    <!-- ===== Main Content ===== -->
     <div class="main-content">
-      <!-- ===== NAV ===== -->
+      <!-- Nav -->
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
@@ -97,49 +87,47 @@
         </ul>
       </nav>
 
-      <!-- ===== ABOUT ===== -->
+      <!-- About -->
       <article class="about active" data-page="about">
-        <header><h2 class="h2 article-title">About me</h2></header>
-
+        <header><h2 class="article-title">About me</h2></header>
         <section class="about-text">
           <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media...</p>
           <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive...</p>
         </section>
-
-        <!-- services, testimonials, modal, clients ... (contenido original mantenido) -->
       </article>
 
-      <!-- ===== RESUME ===== -->
+      <!-- Resume -->
       <article class="resume" data-page="resume">
-        <header><h2 class="h2 article-title">Resume</h2></header>
-
-        <!-- Education timeline ... -->
-        <!-- Experience timeline ... -->
-        <!-- Skills ... -->
+        <header><h2 class="article-title">Resume</h2></header>
+        <p>Aquí puedes poner tu experiencia...</p>
       </article>
 
-      <!-- ===== PORTFOLIO ===== -->
+      <!-- Portfolio -->
       <article class="portfolio" data-page="portfolio">
-        <header><h2 class="h2 article-title">Portfolio</h2></header>
-        <!-- filter + projects ... -->
+        <header><h2 class="article-title">Portfolio</h2></header>
+        <div class="project-list">
+          <div class="project-item">
+            <figure class="project-img">
+              <img src="https://via.placeholder.com/400x200" alt="Proyecto">
+            </figure>
+            <h3 class="project-title">Proyecto de ejemplo</h3>
+          </div>
+        </div>
       </article>
 
-      <!-- ===== BLOG ===== -->
+      <!-- Blog -->
       <article class="blog" data-page="blog">
-        <header><h2 class="h2 article-title">Blog</h2></header>
-        <!-- posts ... -->
+        <header><h2 class="article-title">Blog</h2></header>
+        <p>Próximamente entradas de blog...</p>
       </article>
 
-      <!-- ===== CONTACT ===== -->
+      <!-- Contact -->
       <article class="contact" data-page="contact">
-        <header><h2 class="h2 article-title">Contact</h2></header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..."></iframe>
-          </figure>
+        <header><h2 class="article-title">Contact</h2></header>
+        <section class="mapbox">
+          <iframe src="https://maps.google.com/maps?q=Madrid&t=&z=11&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="300" style="border:0;" loading="lazy"></iframe>
         </section>
-
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
           <form action="#" class="form" data-form>
