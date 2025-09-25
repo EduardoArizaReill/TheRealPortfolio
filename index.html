@@ -3,20 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eduardo-Portfolio</title>
+  <title>Hybrid Design Studio</title>
 
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Lato:300,400,700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap 3 + Font Awesome (HTTPS) -->
+  <!-- Bootstrap 3 + Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 
-  <!-- Tu CSS en la raíz -->
-  <link rel="stylesheet" href="./styles.css?v=1">
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="./styles.css?v=2">
 </head>
 
-<!-- ScrollSpy de Bootstrap -->
 <body data-spy="scroll" data-target="#main-nav" data-offset="60">
 
   <!-- NAVBAR -->
@@ -28,13 +27,16 @@
           <span class="sr-only">Abrir navegación</span>
           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#home">Eduardo Ariza Reillo</a>
+        <a class="navbar-brand" href="#home">Eduardo A. R.</a>
       </div>
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a class="scroll" href="#home">Home</a></li>
-          <li><a class="scroll" href="#about">Sobre mi</a></li>
+          <li><a class="scroll" href="#about">About</a></li>
+          <li><a class="scroll" href="#education">Educación</a></li>
+          <li><a class="scroll" href="#experience">Experiencia</a></li>
+          <li><a class="scroll" href="#skills">Competencias</a></li>
           <li><a class="scroll" href="#portfolio">Portfolio</a></li>
           <li><a class="scroll" href="#contact">Contacto</a></li>
         </ul>
@@ -45,16 +47,13 @@
   <!-- HERO -->
   <header id="home" class="hero">
     <div class="hero-inner">
-      <!-- Si tienes un logo en /assest/logo.png, descomenta la línea de abajo -->
-      <!-- <img src="./assest/logo.png" alt="Logo" class="hero-logo"> -->
       <h1>Eduardo Ariza Reillo</h1>
-      <p>Desarrollo de Software • Ciberseguridad • Cloud & DevOps</p>
+      <p>Ingeniería Informática · Desarrollo de Software · Ciberseguridad & DevOps</p>
       <hr class="hero-sep">
       <div class="socials">
         <a class="btn btn-default btn-lg" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
         <a class="btn btn-default btn-lg" href="https://github.com/EduardoArizaReill" target="_blank"><i class="fa fa-github"></i> Github</a>
         <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/eduardo-ariza-reillo-7a880b21a/" target="_blank"><i class="fa fa-linkedin"></i> Linkedin</a>
-        <a class="btn btn-default btn-lg" href="https://www.youtube.com/@vegetta777" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
       </div>
     </div>
   </header>
@@ -62,11 +61,9 @@
   <!-- ABOUT -->
   <section id="about" class="section section-light">
     <div class="container">
-      <h2 class="section-title">Sobre me</h2>
+      <h2 class="section-title">Sobre mí</h2>
       <p class="lead text-center">
-        Soy estudiante de Ingeniería Informática en la UCLM con experiencia en desarrollo de software, ciberseguridad y cloud. 
-        Trabajo en el Grupo de Investigación en Ciberseguridad (GSyA) y en la empresa SevenWeeks, aplicando buenas prácticas de arquitectura, estándares ENS/ENISA/ISO y metodologías DevOps. 
-        Me motiva aprender, documentar y transformar retos complejos en soluciones fiables y usables.
+        Soy estudiante de Ingeniería Informática en la UCLM con experiencia en desarrollo de software, ciberseguridad y cloud. Trabajo en el Grupo de Investigación en Ciberseguridad (GSyA) y en SevenWeeks, aplicando buenas prácticas de arquitectura, estándares ENS/ENISA/ISO y metodologías DevOps.
       </p>
       <div class="row mt-30">
         <div class="col-sm-4 text-center">
@@ -77,7 +74,7 @@
         <div class="col-sm-4 text-center">
           <i class="fa fa-lock icon-lg"></i>
           <h4>Ciberseguridad</h4>
-          <p>Experiencia en gestión de riesgos, cumplimiento normativo y protección de sistemas.</p>
+          <p>Gestión de riesgos, protección de sistemas y cumplimiento en entornos críticos.</p>
         </div>
         <div class="col-sm-4 text-center">
           <i class="fa fa-check-circle icon-lg"></i>
@@ -88,54 +85,187 @@
     </div>
   </section>
 
+  <!-- EDUCACIÓN -->
+  <section id="education" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Educación</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Grado en Ingeniería Informática – UCLM</h4>
+            <p class="timeline-meta">En curso</p>
+            <p>Formación en desarrollo de software, sistemas, redes y seguridad informática. Enfoque práctico y proyectos colaborativos.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Grado Superior – DAM</h4>
+            <p class="timeline-meta">Finalizado</p>
+            <p>Fundamentos de programación, bases de datos, metodologías ágiles y despliegue de aplicaciones.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Formación complementaria</h4>
+            <p class="timeline-meta">ENS · ENISA · ISO 27000/42000 · DevOps</p>
+            <p>Estándares de seguridad, gobierno del dato y buenas prácticas de arquitectura y automatización.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experience" class="section section-grey">
+    <div class="container">
+      <h2 class="section-title">Experiencia / Trabajo</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="xp-card">
+            <div class="xp-header">
+              <i class="fa fa-shield xp-icon"></i>
+              <div>
+                <h4>GSyA – Grupo de Investigación en Ciberseguridad (UCLM)</h4>
+                <small class="xp-meta">Asistente de investigación · 2024 – Presente</small>
+              </div>
+            </div>
+            <p>Proyectos de seguridad de la información y gestión de riesgos; aplicación de estándares ENS/ENISA/ISO; documentación técnica y prototipado.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="xp-card">
+            <div class="xp-header">
+              <i class="fa fa-cogs xp-icon"></i>
+              <div>
+                <h4>SevenWeeks</h4>
+                <small class="xp-meta">Desarrollador de Software · 2024 – Presente</small>
+              </div>
+            </div>
+            <p>Desarrollo y mantenimiento de aplicaciones; integración CI/CD; buenas prácticas de arquitectura y seguridad; trabajo en equipo con enfoque DevOps.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="xp-card">
+            <div class="xp-header">
+              <i class="fa fa-industry xp-icon"></i>
+              <div>
+                <h4>Indra</h4>
+                <small class="xp-meta">Prácticas · 2023</small>
+              </div>
+            </div>
+            <p>Apoyo en desarrollo y operaciones TI dentro de un entorno corporativo, cumpliendo criterios de calidad y seguridad.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="xp-card">
+            <div class="xp-header">
+              <i class="fa fa-lightbulb-o xp-icon"></i>
+              <div>
+                <h4>Munity</h4>
+                <small class="xp-meta">Prácticas · 2023</small>
+              </div>
+            </div>
+            <p>Colaboración en soluciones tecnológicas ágiles con foco en impacto real para usuarios y organizaciones.</p>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="xp-card">
+            <div class="xp-header">
+              <i class="fa fa-code xp-icon"></i>
+              <div>
+                <h4>Proyecto personal – TrackerGames</h4>
+                <small class="xp-meta">Full-Stack · 2024</small>
+              </div>
+            </div>
+            <p>App web con Java Spring Boot + Docker + MySQL (usuarios, persistencia, UI para LoL/Apex). Integración backend-frontend-BD aplicando principios de ciberseguridad.</p>
+            <a href="#" class="btn btn-primary btn-sm">Ver proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCIAS -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Competencias</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4><i class="fa fa-code"></i> Desarrollo</h4>
+          <ul class="skill-tags">
+            <li>Java</li><li>Spring Boot</li><li>Docker</li><li>MySQL</li>
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git/GitHub</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h4><i class="fa fa-lock"></i> Ciberseguridad & Normativa</h4>
+          <ul class="skill-tags">
+            <li>ENS</li><li>ENISA</li><li>ISO 27000</li><li>ISO 42000</li>
+            <li>Gestión de riesgos</li><li>Hardening</li><li>Cumplimiento</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h4><i class="fa fa-cloud"></i> Cloud & DevOps</h4>
+          <ul class="skill-tags">
+            <li>CI/CD</li><li>Automatización</li><li>Contenedores</li><li>Monitoreo</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h4><i class="fa fa-users"></i> Habilidades blandas</h4>
+          <ul class="skill-tags">
+            <li>Trabajo en equipo</li><li>Documentación</li><li>Comunicación</li><li>Aprendizaje continuo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PORTFOLIO -->
   <section id="portfolio" class="section section-grey">
     <div class="container">
       <h2 class="section-title">Portfolio</h2>
-
       <div class="row">
         <div class="col-sm-4">
           <div class="card">
-            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="League of Legends" class="img-responsive">
+            <img src="https://picsum.photos/seed/p1/600/400" alt="Proyecto 1" class="img-responsive">
             <div class="card-body">
-              <h4>Proyecto de jugadores</h4>
-              <p>Un proyecto realizado en spring boot para tracker estadísticas precisas de jugadores.</p>
-              <a class="btn btn-primary btn-sm" href="assets/Sprint4-EduardoFcoArizaReillo.zip" target="_blank">Descargar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="https://placedog.net/600/400" alt="Perro" class="img-responsive">
-            <div class="card-body">
-              <h4>Proyecto perro</h4>
-              <p>Perrito.</p>
+              <h4>Proyecto 1</h4>
+              <p>Landing responsive con Bootstrap.</p>
               <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
             </div>
           </div>
         </div>
-
         <div class="col-sm-4">
           <div class="card">
-            <img src="https://placedog.net/600/400"
-                 alt="Pikachu" class="img-responsive">
+            <img src="https://placedog.net/600/400" alt="Proyecto 2 - Perro" class="img-responsive">
             <div class="card-body">
-              <h4>Otro</h4>
-              <p>Perro</p>
-              <a class="btn btn-primary btn-sm" href="#" target="_blank">Wof</a>
+              <h4>Proyecto 2</h4>
+              <p>Ejemplo con imagen de un perro.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="League of Legends" class="img-responsive">
+            <div class="card-body">
+              <h4>Proyecto 3</h4>
+              <p>Ejemplo con imagen de League of Legends.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section section-dark">
     <div class="container">
-      <h2 class="section-title light">Contact</h2>
+      <h2 class="section-title light">Contacto</h2>
       <p class="text-center">¿Hablamos? Envíame un mensaje.</p>
       <form class="contact-form">
         <div class="row">
@@ -155,12 +285,9 @@
           <button class="btn btn-success btn-lg" type="submit">Enviar</button>
         </div>
       </form>
-
       <div class="text-center mt-20">
-        <!-- Botón de descarga usando tu carpeta 'assest' -->
         <a href="./assest/CV-2025.png" class="btn btn-info" download="CV-2025.png">📄 Descargar CV</a>
-        <!-- Botón que abre en nueva pestaña -->
-        <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" class="btn btn-default" target="_blank" rel="noopener noreferrer">🌐 Portfolio Online</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" class="btn btn-default" target="_blank">🌐 Portfolio Online</a>
       </div>
     </div>
   </section>
@@ -168,13 +295,13 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container text-center">
-      <small>© <span id="year"></span> Hybrid Design Studio</small>
+      <small>© <span id="year"></span> Eduardo Ariza Reillo</small>
     </div>
   </footer>
 
-  <!-- jQuery → Bootstrap → tu JS (todos en raíz) -->
+  <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script src="./script.js?v=1"></script>
+  <script src="./script.js?v=2"></script>
 </body>
 </html>
