@@ -1,11 +1,17 @@
-/* Makes the clicked social link remove it's focus state when retunrning to page */
-$(".btn").mouseup(function(){
-  $(this).blur();
-});
+// Año del footer
+document.getElementById('year').textContent = new Date().getFullYear();
 
-$(document).ready(function(){
-  $("#arrowToAbout").delay(3000).fadeIn("slow");
-});
+// Scroll suave para enlaces internos con clase .scroll
+$(function () {
+  $('a[href^="#"].scroll').on('click', function (e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    var $el = $(target);
+    if ($el.length) {
+      $('html, body').animate({ scrollTop: $el.offset().top - 60 }, 700);
+    }
+  });
 
-/* Makes the first anchor jump 50 pixels up so the fixed navbar is ok -- changed by CSS a[id*="a-"]
-window.addEventListener("hashchange", function() { scrollBy(0, -50) })*/
+  // Activa tooltips si los usas en algún icono
+  $('[data-toggle="tooltip"]').tooltip();
+});
