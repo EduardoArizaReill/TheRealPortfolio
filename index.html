@@ -1,185 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV – Eduardo Ariza Reillo</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eduardo-Portfolio</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 3 + Font Awesome (HTTPS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+  <!-- Tu CSS en la raíz -->
+  <link rel="stylesheet" href="./styles.css?v=1">
 </head>
-<body>
-  <div class="resume">
-    <!-- left-side -->
-    <div class="left-side">
-      <div class="profile">
-        <div class="profile-img">
-          <img src="assest/FotoGit.jpg" alt="Foto de perfil">
-        </div>
-        <h1 class="name">Eduardo Ariza Reillo</h1>
-        <p class="title">Ingeniería Informática · Desarrollo · Ciberseguridad</p>
+
+<!-- ScrollSpy de Bootstrap -->
+<body data-spy="scroll" data-target="#main-nav" data-offset="60">
+
+  <!-- NAVBAR -->
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Botón móvil -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="sr-only">Abrir navegación</span>
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">Stein G.</a>
       </div>
 
-      <div class="contact padding-top-bg">
-        <h1 class="heading-primary-white">Contacto</h1>
-        <div class="info-box padding-top-sm">
-          <div class="info-title">Teléfono</div>
-          <div class="info"><a href="tel:+34623195340">+34 623195340</a></div>
-        </div>
-        <div class="info-box padding-top-sm">
-          <div class="info-title">Email</div>
-          <div class="info"><a href="mailto:arizareilloeduardo@gmail.com">arizareilloeduardo@gmail.com</a></div>
-        </div>
-        <div class="info-box padding-top-sm">
-          <div class="info-title">LinkedIn</div>
-          <div class="info"><a href="https://www.linkedin.com/in/eduardo-ariza-reillo-7a880b21a/" target="_blank" rel="noopener">linkedin.com/in/eduardo-ariza-reillo</a></div>
-        </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a class="scroll" href="#home">Home</a></li>
+          <li><a class="scroll" href="#about">About</a></li>
+          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="scroll" href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <div class="education padding-top-bg">
-        <h1 class="heading-primary-white">Educación</h1>
-        <div class="info-box padding-top-sm">
-          <div class="info">Actual</div>
-          <div class="info-title">Grado en Ingeniería Informática</div>
-          <div class="info">UCLM</div>
-        </div>
-        <div class="info-box padding-top-sm">
-          <div class="info">Previo</div>
-          <div class="info-title">Grado Superior DAM</div>
-          <div class="info">FP</div>
-        </div>
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <!-- Si tienes un logo en /assest/logo.png, descomenta la línea de abajo -->
+      <!-- <img src="./assest/logo.png" alt="Logo" class="hero-logo"> -->
+      <h1>Hybrid Design Studio</h1>
+      <p>Full Stack Web development • Graphic UI/UX Design • SEO</p>
+      <hr class="hero-sep">
+      <div class="socials">
+        <a class="btn btn-default btn-lg" href="#" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+        <a class="btn btn-default btn-lg" href="#" target="_blank"><i class="fa fa-github"></i> Github</a>
+        <a class="btn btn-default btn-lg" href="#" target="_blank"><i class="fa fa-linkedin"></i> Linkedin</a>
+        <a class="btn btn-default btn-lg" href="#" target="_blank"><i class="fa fa-fire"></i> FreeCodeCamp</a>
       </div>
+    </div>
+  </header>
 
-      <div class="expertise padding-top-bg">
-        <h1 class="heading-primary-white">Competencias</h1>
-        <div class="skill padding-top-sm"><span></span><div class="skill-name">Java · Spring Boot</div></div>
-        <div class="skill padding-top-sm"><span></span><div class="skill-name">Docker · MySQL</div></div>
-        <div class="skill padding-top-sm"><span></span><div class="skill-name">GitHub · CI/CD</div></div>
-        <div class="skill padding-top-sm"><span></span><div class="skill-name">ENS · ENISA · ISO 27000/42000</div></div>
-      </div>
-
-       <div class="education padding-top-bg">
-        <h1 class="heading-primary-white">Sobre mi persona</h1>
-        <div class="info-box padding-top-sm">
-          <div class="info-title">Pink Force</div>
-          <div class="info">Integrante activo de la Fundación The Pink Force.
-          Es una entidad sin ánimo de lucro cuyo objetivo es llevar alegría e ilusión a los niños enfermos</div>
-          <div class="info">Fundación Amatou</div>
+  <!-- ABOUT -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="lead text-center">
+        Creamos experiencias digitales usables y bonitas, con foco en rendimiento y accesibilidad.
+      </p>
+      <div class="row mt-30">
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-code icon-lg"></i>
+          <h4>Desarrollo</h4>
+          <p>Front-end y back-end modernos con buenas prácticas.</p>
         </div>
-        <div class="info-box padding-top-sm">
-          <div class="info-title">Cofundador de la asociación AMATOU</div>
-          <div class="info">asociación creada para apoyar a las personas con Síndrome de Gilles de la Tourette y sus familias, 
-                            que busca combatir el aislamiento, dar acompañamiento, asesoramiento, divulgar y concienciar a la sociedad, 
-                            además de defender los derechos de los afectados.</div>
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-paint-brush icon-lg"></i>
+          <h4>UI/UX</h4>
+          <p>Interfaces claras con foco en la experiencia de usuario.</p>
         </div>
-      </div>
-      
-      <div class="language padding-top-bg">
-        <h1 class="heading-primary-white">Idiomas</h1>
-        <div class="info-box padding-top-sm">
-          <div class="lang-box">
-            <p class="info-title">Español</p>
-            <span class="percent"><div style="width: 100%;"></div></span>
-          </div>
-          <div class="lang-box">
-            <p class="info-title">Inglés (C1 Aptis)</p>
-            <span class="percent"><div style="width: 85%;"></div></span>
-          </div>
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-line-chart icon-lg"></i>
+          <h4>SEO</h4>
+          <p>Optimización técnica y buen contenido para crecer.</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- right-side -->
-    <div class="right-side">
-      <div class="about-me padding-top-bg">
-        <h1 class="heading-primary-black">Perfil</h1>
-        <p class="discription">
-          Estudiante de Ingeniería Informática con experiencia en desarrollo de software, ciberseguridad y cloud.
-          Actualmente trabajo en el <strong>Grupo de Investigación en Ciberseguridad (GSyA)</strong> y en <strong>SevenWeeks</strong>,
-          aplicando mis conocimientos en proyectos reales de investigación y desarrollo.
-          Aplico estándares (ENS, ENISA, ISO 27000/42000) y buenas prácticas de arquitectura y DevOps para crear
-          soluciones fiables y mantenibles. Me motiva aprender, documentar y transformar retos complejos en resultados.
-        </p>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section section-grey">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://picsum.photos/seed/p1/600/400" alt="Proyecto 1" class="img-responsive">
+            <div class="card-body">
+              <h4>Proyecto 1</h4>
+              <p>Landing responsive con Bootstrap.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://picsum.photos/seed/p2/600/400" alt="Proyecto 2" class="img-responsive">
+            <div class="card-body">
+              <h4>Proyecto 2</h4>
+              <p>App pequeña con JS y API pública.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://picsum.photos/seed/p3/600/400" alt="Proyecto 3" class="img-responsive">
+            <div class="card-body">
+              <h4>Proyecto 3</h4>
+              <p>Dashboard con gráficos.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="experience padding-top-bg">
-        <h1 class="heading-primary-black">Experiencia</h1>
+    </div>
+  </section>
 
-        <div class="xp-box padding-top-sm">
-          <p class="xp-year">2025–Presente</p>
-          <p class="xp-company">GSyA – Grupo de Investigación en Ciberseguridad (UCLM)</p>
-          <p class="xp-position">Asistente de investigación / Desarrollador</p>
-          <p class="discription">
-            Proyectos de seguridad de la información y gestión de riesgos; aplicación de estándares ENS, ENISA e ISO;
-            apoyo en diseño de arquitecturas seguras y marcos de cumplimiento.
-          </p>
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title light">Contact</h2>
+      <p class="text-center">¿Hablamos? Envíame un mensaje.</p>
+      <form class="contact-form">
+        <div class="row">
+          <div class="col-sm-6">
+            <input class="form-control input-lg" type="text" placeholder="Nombre" required />
+          </div>
+          <div class="col-sm-6">
+            <input class="form-control input-lg" type="email" placeholder="Email" required />
+          </div>
         </div>
-
-        <div class="xp-box padding-top-sm">
-          <p class="xp-year">2025–Presente</p>
-          <p class="xp-company">SevenWeeks</p>
-          <p class="xp-position">Desarrollador de Software . Consultor Junior</p>
-          <p class="discription">
-            Desarrollo y mantenimiento de aplicaciones con buenas prácticas de programación y seguridad; trabajo en equipo
-            con principios DevOps y documentación técnica.
-          </p>
+        <div class="row mt-15">
+          <div class="col-sm-12">
+            <textarea class="form-control input-lg" rows="5" placeholder="Mensaje" required></textarea>
+          </div>
         </div>
-
-        <div class="xp-box padding-top-sm">
-          <p class="xp-year">2024</p>
-          <p class="xp-company">Proyecto personal – TrackerGames</p>
-          <p class="xp-position">Desarrollador Full-Stack</p>
-          <p class="discription padding-fix">
-            App web con Java Spring Boot + Docker + MySQL. Autenticación de usuarios, persistencia y UI (LoL, Apex).
-            Integración backend-frontend-BD aplicando principios de ciberseguridad y arquitectura.
-          </p>
-
-            <!-- Botón bonito -->
-            <a href="TrackerGames.zip" class="project-btn" download>⬇ Descargar Proyecto</a>
-          
+        <div class="text-center mt-20">
+          <button class="btn btn-success btn-lg" type="submit">Enviar</button>
         </div>
-        
-        <div class="xp-box padding-top-sm">
-          <p class="xp-year">2024</p>
-          <p class="xp-company">Ayudante de escritor</p>
-          <p class="xp-position">Coprotagonista del libro escucha mi voz</p>
-          <p class="discription padding-fix">
-          Este libro explica el sindrome de gilles de la tourette a través de experiencias reales y vividas con todo los sentidos. 
-          Lo más fuerte de estas vivencias es la soledad que, desde la niñez, padecen los afectados. 
-          Muchos de ellos deciden sufrir en silencio y en soledad, otros sufren acoso escolar y algunos prefieren plantar cara al problema y asumir sus dificultades, viendo al final que al amor rompe las barreras.
-          </p>
+      </form>
 
-            <!-- Botón bonito -->
-            <a href="https://www.amazon.es/Escucha-voz-S%C3%ADndrome-Gilles-Tourette-ebook/dp/B09GYBGNGB" class="project-btn" download>Ir a enlace</a>
-          
-        </div>
-
-        <div class="xp-box padding-top-sm">
-          <p class="xp-year">2024</p>
-          <p class="xp-company">Ayudante de escritor</p>
-          <p class="xp-position">Ayudante emocional</p>
-          <p class="discription padding-fix">
-          trata sobre una familia que emigra en busca de un futuro mejor y, pese a las dificultades económicas, se mantiene unida gracias a la fe, 
-          la honestidad y el amor. La protagonista es Lucía, una de las hijas, que sueña en grande y enfrenta la vida con valentía. 
-          Aunque es diagnosticada con el Síndrome de Gilles de la Tourette, decide ver la enfermedad como un amigo que la acompaña y la impulsa a crecer.
-           </p>
-
-            <!-- Botón bonito -->
-            <a href="https://www.amazon.com/-/es/Hojas-sueltas-para-amor-Spanish/dp/8418337443" class="project-btn" download>Ir a enlace</a>
-          
-        </div>
-        
-        <!-- Fin div -->
+      <div class="text-center mt-20">
+        <!-- Botón de descarga usando tu carpeta 'assest' -->
+        <a href="./assest/CV-2025.png" class="btn btn-info" download="CV-2025.png">📄 Descargar CV</a>
+        <!-- Botón que abre en nueva pestaña -->
+        <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" class="btn btn-default" target="_blank" rel="noopener noreferrer">🌐 Portfolio Online</a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Footer con botones -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-buttons">
-      <a href="assest/CV-2025.png" class="footer-btn" download="CV-2025.png">Descargar CV</a>
-      <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" class="footer-btn">Portfolio Online</a>
+    <div class="container text-center">
+      <small>© <span id="year"></span> Hybrid Design Studio</small>
     </div>
-    <p class="footer-copy">© 2025 Eduardo Ariza Reillo</p>
   </footer>
+
+  <!-- jQuery → Bootstrap → tu JS (todos en raíz) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="./script.js?v=1"></script>
 </body>
 </html>
-
