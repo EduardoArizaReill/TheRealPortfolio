@@ -1,333 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio · Eduardo Ariza Reillo</title>
-
-  <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Lato:300,400,700&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap 3 + Font Awesome (HTTPS) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-
-  <!-- Tu CSS en la raíz -->
-  <link rel="stylesheet" href="./styles.css?v=4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – Eduardo Ariza Reillo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body data-spy="scroll" data-target="#main-nav" data-offset="60">
-
-  <!-- NAVBAR -->
-  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-          <span class="sr-only">Abrir navegación</span>
-          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand scroll" href="#home">Eduardo A. R.</a>
+<body>
+  <div class="resume">
+    <!-- left-side -->
+    <div class="left-side">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="assest/FotoGit.jpg" alt="Foto de perfil">
+        </div>
+        <h1 class="name">Eduardo Ariza Reillo</h1>
+        <p class="title">Ingeniería Informática · Desarrollo · Ciberseguridad</p>
       </div>
 
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a class="scroll" href="#home">Home</a></li>
-          <li><a class="scroll" href="#about">Sobre mí</a></li>
-          <li><a class="scroll" href="#education">Educación</a></li>
-          <li><a class="scroll" href="#experience">Experiencia</a></li>
-          <li><a class="scroll" href="#skills">Competencias</a></li>
-          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
-          <li><a class="scroll" href="#contact">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="hero-inner">
-      <h1>Eduardo Ariza Reillo</h1>
-      <p>Ingeniería Informática · Desarrollo de Software · Ciberseguridad & DevOps</p>
-      <hr class="hero-sep">
-      <div class="socials">
-        <a class="btn btn-default btn-lg" href="https://www.facebook.com/" target="_blank" rel="noopener">
-          <i class="fa fa-facebook"></i> Facebook
-        </a>
-        <a class="btn btn-default btn-lg" href="https://github.com/EduardoArizaReill" target="_blank" rel="noopener">
-          <i class="fa fa-github"></i> Github
-        </a>
-        <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/eduardo-ariza-reillo-7a880b21a/" target="_blank" rel="noopener">
-          <i class="fa fa-linkedin"></i> Linkedin
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Sobre mí</h2>
-      <p class="lead text-center">
-        Estudiante de Ingeniería Informática (UCLM) con experiencia en desarrollo de software, ciberseguridad y cloud. Colaboro en el grupo GSyA y trabajo en SevenWeeks, aplicando estándares ENS/ENISA/ISO y prácticas DevOps. Me motiva aprender, documentar y convertir retos complejos en soluciones fiables y usables.
-      </p>
-      <div class="row mt-30">
-        <div class="col-sm-4 text-center">
-          <i class="fa fa-code icon-lg"></i>
-          <h4>Desarrollo</h4>
-          <p>Front-end y back-end modernos con buenas prácticas.</p>
+      <div class="contact padding-top-bg">
+        <h1 class="heading-primary-white">Contacto</h1>
+        <div class="info-box padding-top-sm">
+          <div class="info-title">Teléfono</div>
+          <div class="info"><a href="tel:+34623195340">+34 623195340</a></div>
         </div>
-        <div class="col-sm-4 text-center">
-          <i class="fa fa-lock icon-lg"></i>
-          <h4>Ciberseguridad</h4>
-          <p>Gestión de riesgos, protección de sistemas y cumplimiento.</p>
+        <div class="info-box padding-top-sm">
+          <div class="info-title">Email</div>
+          <div class="info"><a href="mailto:arizareilloeduardo@gmail.com">arizareilloeduardo@gmail.com</a></div>
         </div>
-        <div class="col-sm-4 text-center">
-          <i class="fa fa-check-circle icon-lg"></i>
-          <h4>ISO & Normativa</h4>
-          <p>ENS, ENISA, ISO 27000/42000 en proyectos reales.</p>
+        <div class="info-box padding-top-sm">
+          <div class="info-title">LinkedIn</div>
+          <div class="info"><a href="https://www.linkedin.com/in/eduardo-ariza-reillo-7a880b21a/" target="_blank" rel="noopener">linkedin.com/in/eduardo-ariza-reillo</a></div>
         </div>
       </div>
+
+      <div class="education padding-top-bg">
+        <h1 class="heading-primary-white">Educación</h1>
+        <div class="info-box padding-top-sm">
+          <div class="info">Actual</div>
+          <div class="info-title">Grado en Ingeniería Informática</div>
+          <div class="info">UCLM</div>
+        </div>
+        <div class="info-box padding-top-sm">
+          <div class="info">Previo</div>
+          <div class="info-title">Grado Superior DAM</div>
+          <div class="info">FP</div>
+        </div>
+      </div>
+
+      <div class="expertise padding-top-bg">
+        <h1 class="heading-primary-white">Competencias</h1>
+        <div class="skill padding-top-sm"><span></span><div class="skill-name">Java · Spring Boot</div></div>
+        <div class="skill padding-top-sm"><span></span><div class="skill-name">Docker · MySQL</div></div>
+        <div class="skill padding-top-sm"><span></span><div class="skill-name">GitHub · CI/CD</div></div>
+        <div class="skill padding-top-sm"><span></span><div class="skill-name">ENS · ENISA · ISO 27000/42000</div></div>
+      </div>
+
+       <div class="education padding-top-bg">
+        <h1 class="heading-primary-white">Sobre mi persona</h1>
+        <div class="info-box padding-top-sm">
+          <div class="info-title">Pink Force</div>
+          <div class="info">Integrante activo de la Fundación The Pink Force.
+          Es una entidad sin ánimo de lucro cuyo objetivo es llevar alegría e ilusión a los niños enfermos</div>
+          <div class="info">Fundación Amatou</div>
+        </div>
+        <div class="info-box padding-top-sm">
+          <div class="info-title">Cofundador de la asociación AMATOU</div>
+          <div class="info">asociación creada para apoyar a las personas con Síndrome de Gilles de la Tourette y sus familias, 
+                            que busca combatir el aislamiento, dar acompañamiento, asesoramiento, divulgar y concienciar a la sociedad, 
+                            además de defender los derechos de los afectados.</div>
+        </div>
+      </div>
+      
+      <div class="language padding-top-bg">
+        <h1 class="heading-primary-white">Idiomas</h1>
+        <div class="info-box padding-top-sm">
+          <div class="lang-box">
+            <p class="info-title">Español</p>
+            <span class="percent"><div style="width: 100%;"></div></span>
+          </div>
+          <div class="lang-box">
+            <p class="info-title">Inglés (C1 Aptis)</p>
+            <span class="percent"><div style="width: 85%;"></div></span>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <!-- EDUCACIÓN -->
-  <section id="education" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Educación</h2>
-      <ul class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Grado en Ingeniería Informática – UCLM</h4>
-            <p class="timeline-meta">En curso</p>
-            <p>Desarrollo de software, sistemas, redes y seguridad informática. Proyectos colaborativos y enfoque práctico.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Grado Superior – DAM</h4>
-            <p class="timeline-meta">Finalizado</p>
-            <p>Programación, bases de datos, metodologías ágiles y despliegue.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Formación complementaria</h4>
-            <p class="timeline-meta">ENS · ENISA · ISO 27000/42000 · DevOps</p>
-            <p>Estándares de seguridad, gobierno del dato y automatización.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- right-side -->
+    <div class="right-side">
+      <div class="about-me padding-top-bg">
+        <h1 class="heading-primary-black">Perfil</h1>
+        <p class="discription">
+          Estudiante de Ingeniería Informática con experiencia en desarrollo de software, ciberseguridad y cloud.
+          Actualmente trabajo en el <strong>Grupo de Investigación en Ciberseguridad (GSyA)</strong> y en <strong>SevenWeeks</strong>,
+          aplicando mis conocimientos en proyectos reales de investigación y desarrollo.
+          Aplico estándares (ENS, ENISA, ISO 27000/42000) y buenas prácticas de arquitectura y DevOps para crear
+          soluciones fiables y mantenibles. Me motiva aprender, documentar y transformar retos complejos en resultados.
+        </p>
+      </div>
 
-<!-- EXPERIENCIA (Grid 2 columnas ordenado por fecha) -->
-<section id="experience" class="section section-grey">
-  <div class="container">
-    <h2 class="section-title">Experiencia / Trabajo</h2>
+      <div class="experience padding-top-bg">
+        <h1 class="heading-primary-black">Experiencia</h1>
 
-    <div class="xp-grid">
-      <!-- 2025 -->
-      <article class="xp-card">
-        <div class="xp-header">
-          <i class="fa fa-rocket xp-icon"></i>
-          <div>
-            <h4>Proyecto futuro – Integración Cloud</h4>
-            <small class="xp-meta">2025</small>
-          </div>
+        <div class="xp-box padding-top-sm">
+          <p class="xp-year">2025–Presente</p>
+          <p class="xp-company">GSyA – Grupo de Investigación en Ciberseguridad (UCLM)</p>
+          <p class="xp-position">Asistente de investigación / Desarrollador</p>
+          <p class="discription">
+            Proyectos de seguridad de la información y gestión de riesgos; aplicación de estándares ENS, ENISA e ISO;
+            apoyo en diseño de arquitecturas seguras y marcos de cumplimiento.
+          </p>
         </div>
-        <p>Diseño de arquitectura cloud nativa con contenedores y pipelines CI/CD, enfocada en seguridad y observabilidad.</p>
-        <a class="btn btn-primary btn-sm" href="./assest/proyectos/Futuro_Cloud.zip" download>Descargar proyecto</a>
-      </article>
 
-      <!-- 2024 – presente -->
-      <article class="xp-card">
-        <div class="xp-header">
-          <i class="fa fa-shield xp-icon"></i>
-          <div>
-            <h4>GSyA – Grupo de Investigación en Ciberseguridad (UCLM)</h4>
-            <small class="xp-meta">Asistente de investigación · 2024 – Presente</small>
-          </div>
+        <div class="xp-box padding-top-sm">
+          <p class="xp-year">2025–Presente</p>
+          <p class="xp-company">SevenWeeks</p>
+          <p class="xp-position">Desarrollador de Software . Consultor Junior</p>
+          <p class="discription">
+            Desarrollo y mantenimiento de aplicaciones con buenas prácticas de programación y seguridad; trabajo en equipo
+            con principios DevOps y documentación técnica.
+          </p>
         </div>
-        <p>Seguridad de la información y gestión de riesgos; aplicación de ENS/ENISA/ISO; documentación técnica y prototipado.</p>
-        <a class="btn btn-primary btn-sm" href="./assest/proyectos/GSyA_memoria.zip" download>Descargar proyecto</a>
-      </article>
 
-      <!-- 2024 – presente -->
-      <article class="xp-card">
-        <div class="xp-header">
-          <i class="fa fa-cogs xp-icon"></i>
-          <div>
-            <h4>SevenWeeks</h4>
-            <small class="xp-meta">Desarrollador de Software · 2024 – Presente</small>
-          </div>
-        </div>
-        <p>Desarrollo y mantenimiento de aplicaciones; integración CI/CD; buenas prácticas de arquitectura y seguridad; enfoque DevOps.</p>
-        <a class="btn btn-primary btn-sm" href="./assest/proyectos/SevenWeeks_demo.zip" download>Descargar proyecto</a>
-      </article>
+        <div class="xp-box padding-top-sm">
+          <p class="xp-year">2024</p>
+          <p class="xp-company">Proyecto personal – TrackerGames</p>
+          <p class="xp-position">Desarrollador Full-Stack</p>
+          <p class="discription padding-fix">
+            App web con Java Spring Boot + Docker + MySQL. Autenticación de usuarios, persistencia y UI (LoL, Apex).
+            Integración backend-frontend-BD aplicando principios de ciberseguridad y arquitectura.
+          </p>
 
-      <!-- 2024 -->
-      <article class="xp-card">
-        <div class="xp-header">
-          <i class="fa fa-code xp-icon"></i>
-          <div>
-            <h4>Proyecto personal – TrackerGames</h4>
-            <small class="xp-meta">Full-Stack · 2024</small>
-          </div>
+            <!-- Botón bonito -->
+            <a href="TrackerGames.zip" class="project-btn" download>⬇ Descargar Proyecto</a>
+          
         </div>
-        <p>App web con Java Spring Boot + Docker + MySQL (usuarios, persistencia, UI LoL/Apex). Integración backend-frontend-BD con ciberseguridad.</p>
-        <a class="btn btn-primary btn-sm" href="./assest/proyectos/TrackerGames.zip" download>Descargar proyecto</a>
-      </article>
+        
+        <div class="xp-box padding-top-sm">
+          <p class="xp-year">2024</p>
+          <p class="xp-company">Ayudante de escritor</p>
+          <p class="xp-position">Coprotagonista del libro escucha mi voz</p>
+          <p class="discription padding-fix">
+          Este libro explica el sindrome de gilles de la tourette a través de experiencias reales y vividas con todo los sentidos. 
+          Lo más fuerte de estas vivencias es la soledad que, desde la niñez, padecen los afectados. 
+          Muchos de ellos deciden sufrir en silencio y en soledad, otros sufren acoso escolar y algunos prefieren plantar cara al problema y asumir sus dificultades, viendo al final que al amor rompe las barreras.
+          </p>
 
-      <!-- 2023 -->
-      <article class="xp-card">
-        <div class="xp-header">
-          <i class="fa fa-industry xp-icon"></i>
-          <div>
-            <h4>Indra</h4>
-            <small class="xp-meta">Prácticas · 2023</small>
-          </div>
+            <!-- Botón bonito -->
+            <a href="https://www.amazon.es/Escucha-voz-S%C3%ADndrome-Gilles-Tourette-ebook/dp/B09GYBGNGB" class="project-btn" download>Ir a enlace</a>
+          
         </div>
-        <p>Apoyo en desarrollo y operaciones TI dentro de un entorno corporativo, cumpliendo criterios de calidad y seguridad.</p>
-        <a class="btn btn-primary btn-sm" href="./assest/proyectos/Indra_practicas.zip" download>Descargar proyecto</a>
-      </article>
 
-      <!-- 2023 -->
-      <article class="xp-card">
-        <div class="xp-header">
-          <i class="fa fa-lightbulb-o xp-icon"></i>
-          <div>
-            <h4>Munity</h4>
-            <small class="xp-meta">Prácticas · 2023</small>
-          </div>
+        <div class="xp-box padding-top-sm">
+          <p class="xp-year">2024</p>
+          <p class="xp-company">Ayudante de escritor</p>
+          <p class="xp-position">Ayudante emocional</p>
+          <p class="discription padding-fix">
+          trata sobre una familia que emigra en busca de un futuro mejor y, pese a las dificultades económicas, se mantiene unida gracias a la fe, 
+          la honestidad y el amor. La protagonista es Lucía, una de las hijas, que sueña en grande y enfrenta la vida con valentía. 
+          Aunque es diagnosticada con el Síndrome de Gilles de la Tourette, decide ver la enfermedad como un amigo que la acompaña y la impulsa a crecer.
+           </p>
+
+            <!-- Botón bonito -->
+            <a href="https://www.amazon.com/-/es/Hojas-sueltas-para-amor-Spanish/dp/8418337443" class="project-btn" download>Ir a enlace</a>
+          
         </div>
-        <p>Colaboración en soluciones ágiles con impacto real para usuarios y organizaciones.</p>
-        <a class="btn btn-primary btn-sm" href="./assest/proyectos/Munity_practicas.zip" download>Descargar proyecto</a>
-      </article>
+        
+        <!-- Fin div -->
+      </div>
     </div>
   </div>
-</section>
-<!-- AQUÍ TERMINA SECTION -->
-  
-<!-- COMPETENCIAS (versión bonita) -->
-  <!-- COMPETENCIAS -->
-  <section id="skills" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Competencias</h2>
-      <div class="row">
-        <div class="col-sm-6">
-          <h4><i class="fa fa-code"></i> Desarrollo</h4>
-          <ul class="skill-tags">
-            <li>Java</li><li>Spring Boot</li><li>Docker</li><li>MySQL</li>
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git/GitHub</li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <h4><i class="fa fa-lock"></i> Ciberseguridad & Normativa</h4>
-          <ul class="skill-tags">
-            <li>ENS</li><li>ENISA</li><li>ISO 27000</li><li>ISO 42000</li>
-            <li>Gestión de riesgos</li><li>Hardening</li><li>Cumplimiento</li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <h4><i class="fa fa-cloud"></i> Cloud & DevOps</h4>
-          <ul class="skill-tags">
-            <li>CI/CD</li><li>Automatización</li><li>Contenedores</li><li>Monitoreo</li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <h4><i class="fa fa-users"></i> Habilidades blandas</h4>
-          <ul class="skill-tags">
-            <li>Trabajo en equipo</li><li>Documentación</li><li>Comunicación</li><li>Aprendizaje continuo</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
-
-  <!-- PORTFOLIO (ejemplo) -->
-  <section id="portfolio" class="section section-grey">
-    <div class="container">
-      <h2 class="section-title">Portfolio</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="https://picsum.photos/seed/p1/600/400" alt="Proyecto 1" class="img-responsive">
-            <div class="card-body">
-              <h4>Proyecto 1</h4>
-              <p>Landing responsive con Bootstrap.</p>
-              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="https://placedog.net/600/400" alt="Proyecto 2 - Perro" class="img-responsive">
-            <div class="card-body">
-              <h4>Proyecto 2</h4>
-              <p>Ejemplo con imagen de un perro.</p>
-              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="League of Legends" class="img-responsive">
-            <div class="card-body">
-              <h4>Proyecto 3</h4>
-              <p>Ejemplo con imagen de League of Legends.</p>
-              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contact" class="section section-dark">
-    <div class="container">
-      <h2 class="section-title light">Contacto</h2>
-      <p class="text-center">¿Hablamos? Envíame un mensaje.</p>
-      <form class="contact-form">
-        <div class="row">
-          <div class="col-sm-6">
-            <input class="form-control input-lg" type="text" placeholder="Nombre" required />
-          </div>
-          <div class="col-sm-6">
-            <input class="form-control input-lg" type="email" placeholder="Email" required />
-          </div>
-        </div>
-        <div class="row mt-15">
-          <div class="col-sm-12">
-            <textarea class="form-control input-lg" rows="5" placeholder="Mensaje" required></textarea>
-          </div>
-        </div>
-        <div class="text-center mt-20">
-          <button class="btn btn-success btn-lg" type="submit">Enviar</button>
-        </div>
-      </form>
-
-      <div class="text-center mt-20">
-        <a href="./assest/CV-2025.png" class="btn btn-info" download="CV-2025.png">📄 Descargar CV</a>
-        <a href="https://youtu.be/dQw4w9WgXcQ" class="btn btn-default" target="_blank" rel="noopener">🌐 Portfolio Online</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- Footer con botones -->
   <footer class="footer">
-    <div class="container text-center">
-      <small>© <span id="year"></span> Eduardo Ariza Reillo</small>
+    <div class="footer-buttons">
+      <a href="assest/CV-2025.png" class="footer-btn" download="CV-2025.png">Descargar CV</a>
+      <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" class="footer-btn">Portfolio Online</a>
     </div>
+    <p class="footer-copy">© 2025 Eduardo Ariza Reillo</p>
   </footer>
-
-  <!-- jQuery → Bootstrap → tu JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script src="./script.js?v=4"></script>
 </body>
 </html>
+
