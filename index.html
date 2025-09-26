@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eduardo A.R-Portfolio</title>
+  <title>Portfolio · Eduardo Ariza Reillo</title>
 
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Lato:300,400,700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap 3 + Font Awesome -->
+  <!-- Bootstrap 3 + Font Awesome (HTTPS) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 
-  <!-- Tu CSS -->
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <!-- Tu CSS en la raíz -->
+  <link rel="stylesheet" href="./styles.css?v=4">
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" data-offset="60">
@@ -22,18 +22,17 @@
   <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <!-- Botón móvil -->
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
           <span class="sr-only">Abrir navegación</span>
           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#home">Eduardo A. R.</a>
+        <a class="navbar-brand scroll" href="#home">Eduardo A. R.</a>
       </div>
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a class="scroll" href="#home">Home</a></li>
-          <li><a class="scroll" href="#about">About</a></li>
+          <li><a class="scroll" href="#about">Sobre mí</a></li>
           <li><a class="scroll" href="#education">Educación</a></li>
           <li><a class="scroll" href="#experience">Experiencia</a></li>
           <li><a class="scroll" href="#skills">Competencias</a></li>
@@ -48,12 +47,18 @@
   <header id="home" class="hero">
     <div class="hero-inner">
       <h1>Eduardo Ariza Reillo</h1>
-      <p>Ingeniería Informática · Desarrollo de Software · Ciberseguridad & Consultor junior</p>
+      <p>Ingeniería Informática · Desarrollo de Software · Ciberseguridad & DevOps</p>
       <hr class="hero-sep">
       <div class="socials">
-        <a class="btn btn-default btn-lg" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
-        <a class="btn btn-default btn-lg" href="https://github.com/EduardoArizaReill" target="_blank"><i class="fa fa-github"></i> Github</a>
-        <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/eduardo-ariza-reillo-7a880b21a/" target="_blank"><i class="fa fa-linkedin"></i> Linkedin</a>
+        <a class="btn btn-default btn-lg" href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <i class="fa fa-facebook"></i> Facebook
+        </a>
+        <a class="btn btn-default btn-lg" href="https://github.com/EduardoArizaReill" target="_blank" rel="noopener">
+          <i class="fa fa-github"></i> Github
+        </a>
+        <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/eduardo-ariza-reillo-7a880b21a/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin"></i> Linkedin
+        </a>
       </div>
     </div>
   </header>
@@ -63,7 +68,7 @@
     <div class="container">
       <h2 class="section-title">Sobre mí</h2>
       <p class="lead text-center">
-        Soy estudiante de Ingeniería Informática en la UCLM con experiencia en desarrollo de software, ciberseguridad y cloud. Trabajo en el Grupo de Investigación en Ciberseguridad (GSyA) y en SevenWeeks, aplicando buenas prácticas de arquitectura, estándares ENS/ENISA/ISO y metodologías DevOps.
+        Estudiante de Ingeniería Informática (UCLM) con experiencia en desarrollo de software, ciberseguridad y cloud. Colaboro en el grupo GSyA y trabajo en SevenWeeks, aplicando estándares ENS/ENISA/ISO y prácticas DevOps. Me motiva aprender, documentar y convertir retos complejos en soluciones fiables y usables.
       </p>
       <div class="row mt-30">
         <div class="col-sm-4 text-center">
@@ -74,12 +79,12 @@
         <div class="col-sm-4 text-center">
           <i class="fa fa-lock icon-lg"></i>
           <h4>Ciberseguridad</h4>
-          <p>Gestión de riesgos, protección de sistemas y cumplimiento en entornos críticos.</p>
+          <p>Gestión de riesgos, protección de sistemas y cumplimiento.</p>
         </div>
         <div class="col-sm-4 text-center">
           <i class="fa fa-check-circle icon-lg"></i>
           <h4>ISO & Normativa</h4>
-          <p>Aplicación de estándares ENS, ENISA e ISO 27000/42000 en proyectos reales.</p>
+          <p>ENS, ENISA, ISO 27000/42000 en proyectos reales.</p>
         </div>
       </div>
     </div>
@@ -90,53 +95,41 @@
     <div class="container">
       <h2 class="section-title">Educación</h2>
       <ul class="timeline">
-        <!-- ISO -->
-        <li class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Formación complementaria</h4>
-            <p class="timeline-meta">ENS · ENISA · ISO 27000/42000 · DevOps</p>
-            <p>Estándares de seguridad, gobierno del dato y buenas prácticas de arquitectura y automatización.</p>
-          </div>
-        </li>
-        <!-- UCLM -->
         <li class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h4>Grado en Ingeniería Informática – UCLM</h4>
             <p class="timeline-meta">En curso</p>
-            <p>Formación en desarrollo de software, sistemas, redes y seguridad informática. Enfoque práctico y proyectos colaborativos.</p>
+            <p>Desarrollo de software, sistemas, redes y seguridad informática. Proyectos colaborativos y enfoque práctico.</p>
           </div>
         </li>
-        <!-- DAM -->
         <li class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h4>Grado Superior – DAM</h4>
             <p class="timeline-meta">Finalizado</p>
-            <p>Fundamentos de programación, bases de datos, metodologías ágiles y despliegue de aplicaciones.</p>
+            <p>Programación, bases de datos, metodologías ágiles y despliegue.</p>
           </div>
         </li>
-
-        <!-- INSTITUTO -->
         <li class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h4>IES</h4>
-            <p class="timeline-meta">IES "Pedro Álvarez de Sotomayor"</p>
-            <p>Instituto en Manzanares/CiudadReal.</p>
+            <h4>Formación complementaria</h4>
+            <p class="timeline-meta">ENS · ENISA · ISO 27000/42000 · DevOps</p>
+            <p>Estándares de seguridad, gobierno del dato y automatización.</p>
           </div>
         </li>
-        
       </ul>
     </div>
   </section>
 
-  <!-- EXPERIENCIA -->
+  <!-- EXPERIENCIA (6 tarjetas con botón de descarga) -->
   <section id="experience" class="section section-grey">
     <div class="container">
       <h2 class="section-title">Experiencia / Trabajo</h2>
+
       <div class="row">
+        <!-- 1 -->
         <div class="col-sm-6">
           <div class="xp-card">
             <div class="xp-header">
@@ -146,10 +139,12 @@
                 <small class="xp-meta">Asistente de investigación · 2024 – Presente</small>
               </div>
             </div>
-            <p>Proyectos de seguridad de la información y gestión de riesgos; aplicación de estándares ENS/ENISA/ISO; documentación técnica y prototipado.</p>
+            <p>Seguridad de la información y gestión de riesgos; aplicación de ENS/ENISA/ISO; documentación técnica y prototipado.</p>
+            <a class="btn btn-primary btn-sm" href="./assest/proyectos/GSyA_memoria.zip" download>Descargar proyecto</a>
           </div>
         </div>
-        
+
+        <!-- 2 -->
         <div class="col-sm-6">
           <div class="xp-card">
             <div class="xp-header">
@@ -159,10 +154,12 @@
                 <small class="xp-meta">Desarrollador de Software · 2024 – Presente</small>
               </div>
             </div>
-            <p>Desarrollo y mantenimiento de aplicaciones; integración CI/CD; buenas prácticas de arquitectura y seguridad; trabajo en equipo con enfoque DevOps.</p>
+            <p>Desarrollo y mantenimiento de aplicaciones; integración CI/CD; buenas prácticas de arquitectura y seguridad; enfoque DevOps.</p>
+            <a class="btn btn-primary btn-sm" href="./assest/proyectos/SevenWeeks_demo.zip" download>Descargar proyecto</a>
           </div>
         </div>
-        
+
+        <!-- 3 -->
         <div class="col-sm-6">
           <div class="xp-card">
             <div class="xp-header">
@@ -173,9 +170,11 @@
               </div>
             </div>
             <p>Apoyo en desarrollo y operaciones TI dentro de un entorno corporativo, cumpliendo criterios de calidad y seguridad.</p>
+            <a class="btn btn-primary btn-sm" href="./assest/proyectos/Indra_practicas.zip" download>Descargar proyecto</a>
           </div>
         </div>
-        
+
+        <!-- 4 -->
         <div class="col-sm-6">
           <div class="xp-card">
             <div class="xp-header">
@@ -185,10 +184,12 @@
                 <small class="xp-meta">Prácticas · 2023</small>
               </div>
             </div>
-            <p>Colaboración en soluciones tecnológicas ágiles con foco en impacto real para usuarios y organizaciones.</p>
+            <p>Colaboración en soluciones ágiles con impacto real para usuarios y organizaciones.</p>
+            <a class="btn btn-primary btn-sm" href="./assest/proyectos/Munity_practicas.zip" download>Descargar proyecto</a>
           </div>
         </div>
-        
+
+        <!-- 5 -->
         <div class="col-sm-6">
           <div class="xp-card">
             <div class="xp-header">
@@ -198,14 +199,28 @@
                 <small class="xp-meta">Full-Stack · 2024</small>
               </div>
             </div>
-            <p>App web con Java Spring Boot + Docker + MySQL (usuarios, persistencia, UI para LoL/Apex). Integración backend-frontend-BD aplicando principios de ciberseguridad.</p>
-            <a href="#" class="btn btn-primary btn-sm">Ver proyecto</a>
+            <p>App web con Java Spring Boot + Docker + MySQL (usuarios, persistencia, UI LoL/Apex). Integración backend-frontend-BD aplicando principios de ciberseguridad.</p>
+            <a class="btn btn-primary btn-sm" href="./assest/proyectos/TrackerGames.zip" download>Descargar proyecto</a>
+          </div>
+        </div>
+
+        <!-- 6 (nueva caja para simetría) -->
+        <div class="col-sm-6">
+          <div class="xp-card">
+            <div class="xp-header">
+              <i class="fa fa-rocket xp-icon"></i>
+              <div>
+                <h4>Proyecto futuro – Integración Cloud</h4>
+                <small class="xp-meta">2025</small>
+              </div>
+            </div>
+            <p>Diseño de arquitectura cloud nativa con contenedores y pipelines CI/CD, enfocada en seguridad y observabilidad.</p>
+            <a class="btn btn-primary btn-sm" href="./assest/proyectos/Futuro_Cloud.zip" download>Descargar proyecto</a>
           </div>
         </div>
       </div>
-    </div>
- <!-- Este es el pocho -->
 
+    </div>
   </section>
 
   <!-- COMPETENCIAS -->
@@ -243,7 +258,7 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
+  <!-- PORTFOLIO (ejemplo) -->
   <section id="portfolio" class="section section-grey">
     <div class="container">
       <h2 class="section-title">Portfolio</h2>
@@ -254,7 +269,7 @@
             <div class="card-body">
               <h4>Proyecto 1</h4>
               <p>Landing responsive con Bootstrap.</p>
-              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
             </div>
           </div>
         </div>
@@ -264,7 +279,7 @@
             <div class="card-body">
               <h4>Proyecto 2</h4>
               <p>Ejemplo con imagen de un perro.</p>
-              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
             </div>
           </div>
         </div>
@@ -274,7 +289,7 @@
             <div class="card-body">
               <h4>Proyecto 3</h4>
               <p>Ejemplo con imagen de League of Legends.</p>
-              <a class="btn btn-primary btn-sm" href="#" target="_blank">Ver</a>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
             </div>
           </div>
         </div>
@@ -282,7 +297,7 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACTO -->
   <section id="contact" class="section section-dark">
     <div class="container">
       <h2 class="section-title light">Contacto</h2>
@@ -305,9 +320,10 @@
           <button class="btn btn-success btn-lg" type="submit">Enviar</button>
         </div>
       </form>
+
       <div class="text-center mt-20">
         <a href="./assest/CV-2025.png" class="btn btn-info" download="CV-2025.png">📄 Descargar CV</a>
-        <a href="https://youtu.be/dQw4w9WgXcQ" class="btn btn-default" target="_blank">🌐 Portfolio Online</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" class="btn btn-default" target="_blank" rel="noopener">🌐 Portfolio Online</a>
       </div>
     </div>
   </section>
@@ -319,9 +335,9 @@
     </div>
   </footer>
 
-  <!-- JS -->
+  <!-- jQuery → Bootstrap → tu JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script src="./script.js?v=2"></script>
+  <script src="./script.js?v=4"></script>
 </body>
 </html>
