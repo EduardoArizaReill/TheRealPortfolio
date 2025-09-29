@@ -188,4 +188,35 @@ img{max-width:100%; height:auto;}
   border: 1px solid rgba(255,255,255,.14);
   color: #f0f0f0;
 }
+/* Fondo estilo Resident Evil en la zona friki */
+#hobbies {
+  background:
+    linear-gradient(rgba(43,0,0,0.7), rgba(0,0,0,0.9)),
+    url("./assets/bg-friki.jpg") center center / cover no-repeat fixed;
+  color: #eee;
+  position: relative;
+}
+
+#hobbies .section-title {
+  color: #ff4444;
+  text-shadow: 0 2px 6px rgba(0,0,0,.8);
+}
+
+.friki-card {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,0,0,0.3);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all .2s ease;
+}
+.friki-card:hover {
+  background: rgba(30,0,0,0.8);
+  border-color: rgba(255,50,50,0.6);
+  transform: scale(1.05);
+}
+
+.friki-icon-emoji { font-size: 42px; }
+.friki-fa { font-size: 42px; color:#ff5555; }
 
