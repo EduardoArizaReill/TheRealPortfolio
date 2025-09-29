@@ -8,147 +8,328 @@
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Lato:300,400,700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap 3 + Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap 3 + Font Awesome (HTTPS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 
-  <!-- Tu CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Tu CSS en la raíz -->
+  <link rel="stylesheet" href="./styles.css?v=3">
 </head>
 
-<body>
-  <!-- NAV -->
-  <nav class="navbar navbar-default navbar-fixed-top">
+<!-- ScrollSpy de Bootstrap -->
+<body data-spy="scroll" data-target="#main-nav" data-offset="60">
+
+  <!-- NAVBAR -->
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-          <span class="sr-only">Abrir menú</span>
+        <!-- Botón móvil -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="sr-only">Abrir navegación</span>
           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#hero">
-          <img src="./assets/logo.png" alt="Logo" style="height:24px; margin-top:-4px;">
-          &nbsp;E. Ariza Reillo
-        </a>
+        <a class="navbar-brand scroll" href="#home">Eduardo A. R.</a>
       </div>
-      <div id="menu" class="collapse navbar-collapse">
+
+      <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about" class="scroll">Sobre mí</a></li>
-          <li><a href="#education" class="scroll">Educación</a></li>
-          <li><a href="#experience" class="scroll">Experiencia</a></li>
-          <li><a href="#pink-force" class="scroll">Pink Force</a></li>
-          <li><a href="#hobbies" class="scroll">Friki</a></li>
-          <li><a href="#contact" class="scroll">Contacto</a></li>
+          <li class="active"><a class="scroll" href="#home">Home</a></li>
+          <li><a class="scroll" href="#about">Sobre mí</a></li>
+          <li><a class="scroll" href="#education">Educación</a></li>
+          <li><a class="scroll" href="#experience">Experiencia</a></li>
+          <li><a class="scroll" href="#skills">Competencias</a></li>
+          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="scroll" href="#contact">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header id="hero" class="hero">
+  <header id="home" class="hero">
     <div class="hero-inner">
+      <!-- Si tienes un logo en /assest/logo.png, descomenta la siguiente línea -->
+      <!-- <img src="./assest/logo.png" alt="Logo" class="hero-logo"> -->
       <h1>Eduardo Ariza Reillo</h1>
-      <p class="lead">Desarrollo · Ciberseguridad · ISO &amp; Normativa</p>
-      <a href="#contact" class="btn btn-primary btn-lg scroll">Hablemos</a>
+      <p>Ingeniería Informática · Desarrollo de Software · Ciberseguridad & DevOps</p>
+      <hr class="hero-sep">
+      <div class="socials">
+        <a class="btn btn-default btn-lg" href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <i class="fa fa-facebook"></i> Facebook
+        </a>
+        <a class="btn btn-default btn-lg" href="https://github.com/EduardoArizaReill" target="_blank" rel="noopener">
+          <i class="fa fa-github"></i> Github
+        </a>
+        <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/eduardo-ariza-reillo-7a880b21a/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin"></i> Linkedin
+        </a>
+      </div>
     </div>
   </header>
 
-  <main id="main">
-    <!-- SOBRE MÍ -->
-    <section id="about" class="section section-light">
-      <div class="container">
-        <h2 class="section-title">Sobre mí</h2>
-        <p>
-          Ingeniero en formación, orientado a desarrollo seguro y ciberseguridad. 
-          Apasionado por las buenas prácticas y la creatividad.
-        </p>
+  <!-- ABOUT -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="lead text-center">
+        Estudiante de Ingeniería Informática (UCLM) con experiencia en desarrollo de software, ciberseguridad y cloud. Colaboro en el grupo GSyA y trabajo en SevenWeeks, aplicando estándares ENS/ENISA/ISO y prácticas DevOps. Me motiva aprender, documentar y convertir retos complejos en soluciones fiables y usables.
+      </p>
+      <div class="row mt-30">
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-code icon-lg"></i>
+          <h4>Desarrollo</h4>
+          <p>Front-end y back-end modernos con buenas prácticas.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-lock icon-lg"></i>
+          <h4>Ciberseguridad</h4>
+          <p>Gestión de riesgos, protección de sistemas y cumplimiento.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <i class="fa fa-check-circle icon-lg"></i>
+          <h4>ISO & Normativa</h4>
+          <p>ENS, ENISA, ISO 27000/42000 en proyectos reales.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EDUCACIÓN -->
-    <section id="education" class="section section-light">
-      <div class="container">
-        <h2 class="section-title">Educación</h2>
-        <div class="timeline">
+  <!-- EDUCACIÓN -->
+  <section id="education" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Educación</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h4>Grado en Ingeniería Informática – UCLM</h4>
+            <p class="timeline-meta">En curso</p>
+            <p>Desarrollo de software, sistemas, redes y seguridad informática. Proyectos colaborativos y enfoque práctico.</p>
           </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h4>Grado Superior – DAM</h4>
+            <p class="timeline-meta">Finalizado</p>
+            <p>Programación, bases de datos, metodologías ágiles y despliegue.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Formación complementaria</h4>
+            <p class="timeline-meta">ENS · ENISA · ISO 27000/42000 · DevOps</p>
+            <p>Estándares de seguridad, gobierno del dato y automatización.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+ <!-- EXPERIENCIA (Grid 2 columnas ordenado por fecha) -->
+<section id="experience" class="section section-grey">
+  <div class="container">
+    <h2 class="section-title">Experiencia / Trabajo</h2>
+
+    <div class="xp-grid">
+      <!-- 2025 -->
+      <article class="xp-card">
+        <div class="xp-header">
+          <i class="fa fa-rocket xp-icon"></i>
+          <div>
+            <h4>Proyecto futuro – Integración Cloud</h4>
+            <small class="xp-meta">2025</small>
+          </div>
+        </div>
+        <p>Diseño de arquitectura cloud nativa con contenedores y pipelines CI/CD, enfocada en seguridad y observabilidad.</p>
+        <a class="btn btn-primary btn-sm" href="./assest/proyectos/Futuro_Cloud.zip" download>Descargar proyecto</a>
+      </article>
+
+      <!-- 2024 – presente -->
+      <article class="xp-card">
+        <div class="xp-header">
+          <i class="fa fa-shield xp-icon"></i>
+          <div>
+            <h4>GSyA – Grupo de Investigación en Ciberseguridad (UCLM)</h4>
+            <small class="xp-meta">Asistente de investigación · 2024 – Presente</small>
+          </div>
+        </div>
+        <p>Seguridad de la información y gestión de riesgos; aplicación de ENS/ENISA/ISO; documentación técnica y prototipado.</p>
+        <a class="btn btn-primary btn-sm" href="./assest/proyectos/GSyA_memoria.zip" download>Descargar proyecto</a>
+      </article>
+
+      <!-- 2024 – presente -->
+      <article class="xp-card">
+        <div class="xp-header">
+          <i class="fa fa-cogs xp-icon"></i>
+          <div>
+            <h4>SevenWeeks</h4>
+            <small class="xp-meta">Desarrollador de Software · 2024 – Presente</small>
+          </div>
+        </div>
+        <p>Desarrollo y mantenimiento de aplicaciones; integración CI/CD; buenas prácticas de arquitectura y seguridad; enfoque DevOps.</p>
+        <a class="btn btn-primary btn-sm" href="./assest/proyectos/SevenWeeks_demo.zip" download>Descargar proyecto</a>
+      </article>
+
+      <!-- 2024 -->
+      <article class="xp-card">
+        <div class="xp-header">
+          <i class="fa fa-code xp-icon"></i>
+          <div>
+            <h4>Proyecto personal – TrackerGames</h4>
+            <small class="xp-meta">Full-Stack · 2024</small>
+          </div>
+        </div>
+        <p>App web con Java Spring Boot + Docker + MySQL (usuarios, persistencia, UI LoL/Apex). Integración backend-frontend-BD con ciberseguridad.</p>
+        <a class="btn btn-primary btn-sm" href="./assest/proyectos/TrackerGames.zip" download>Descargar proyecto</a>
+      </article>
+
+      <!-- 2023 -->
+      <article class="xp-card">
+        <div class="xp-header">
+          <i class="fa fa-industry xp-icon"></i>
+          <div>
+            <h4>Indra</h4>
+            <small class="xp-meta">Prácticas · 2023</small>
+          </div>
+        </div>
+        <p>Apoyo en desarrollo y operaciones TI dentro de un entorno corporativo, cumpliendo criterios de calidad y seguridad.</p>
+        <a class="btn btn-primary btn-sm" href="./assest/proyectos/Indra_practicas.zip" download>Descargar proyecto</a>
+      </article>
+
+      <!-- 2023 -->
+      <article class="xp-card">
+        <div class="xp-header">
+          <i class="fa fa-lightbulb-o xp-icon"></i>
+          <div>
+            <h4>Munity</h4>
+            <small class="xp-meta">Prácticas · 2023</small>
+          </div>
+        </div>
+        <p>Colaboración en soluciones ágiles con impacto real para usuarios y organizaciones.</p>
+        <a class="btn btn-primary btn-sm" href="./assest/proyectos/Munity_practicas.zip" download>Descargar proyecto</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <!-- COMPETENCIAS -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Competencias</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4><i class="fa fa-code"></i> Desarrollo</h4>
+          <ul class="skill-tags">
+            <li>Java</li><li>Spring Boot</li><li>Docker</li><li>MySQL</li>
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git/GitHub</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h4><i class="fa fa-lock"></i> Ciberseguridad & Normativa</h4>
+          <ul class="skill-tags">
+            <li>ENS</li><li>ENISA</li><li>ISO 27000</li><li>ISO 42000</li>
+            <li>Gestión de riesgos</li><li>Hardening</li><li>Cumplimiento</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h4><i class="fa fa-cloud"></i> Cloud & DevOps</h4>
+          <ul class="skill-tags">
+            <li>CI/CD</li><li>Automatización</li><li>Contenedores</li><li>Monitoreo</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h4><i class="fa fa-users"></i> Habilidades blandas</h4>
+          <ul class="skill-tags">
+            <li>Trabajo en equipo</li><li>Documentación</li><li>Comunicación</li><li>Aprendizaje continuo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section section-grey">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://picsum.photos/seed/p1/600/400" alt="Proyecto 1" class="img-responsive">
+            <div class="card-body">
+              <h4>Proyecto 1</h4>
+              <p>Landing responsive con Bootstrap.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://placedog.net/600/400" alt="Proyecto 2 - Perro" class="img-responsive">
+            <div class="card-body">
+              <h4>Proyecto 2</h4>
+              <p>Ejemplo con imagen de un perro.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="League of Legends" class="img-responsive">
+            <div class="card-body">
+              <h4>Proyecto 3</h4>
+              <p>Ejemplo con imagen de League of Legends.</p>
+              <a class="btn btn-primary btn-sm" href="#" target="_blank" rel="noopener">Ver</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXPERIENCIA -->
-    <section id="experience" class="section section-grey">
-      <div class="container">
-        <h2 class="section-title">Experiencia / Trabajo</h2>
+  <!-- CONTACTO -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title light">Contacto</h2>
+      <p class="text-center">¿Hablamos? Envíame un mensaje.</p>
+      <form class="contact-form">
         <div class="row">
-          <div class="col-sm-6"><div class="card"><div class="card-body"><h4>Desarrollador</h4></div></div></div>
-          <div class="col-sm-6"><div class="card"><div class="card-body"><h4>Ciberseguridad</h4></div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PINK FORCE -->
-    <section id="pink-force" class="section section-grey">
-      <div class="container">
-        <h2 class="section-title">Pink Force · Asociación</h2>
-        <div id="pfCarousel" class="carousel slide pf-carousel" data-ride="carousel" data-interval="5000">
-          <ol class="carousel-indicators">
-            <li data-target="#pfCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#pfCarousel" data-slide-to="1"></li>
-            <li data-target="#pfCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="item active"><img src="./assets/pink-force/1.jpg" class="img-responsive" alt="Actividad 1"></div>
-            <div class="item"><img src="./assets/pink-force/2.jpg" class="img-responsive" alt="Actividad 2"></div>
-            <div class="item"><img src="./assets/pink-force/3.jpg" class="img-responsive" alt="Actividad 3"></div>
+          <div class="col-sm-6">
+            <input class="form-control input-lg" type="text" placeholder="Nombre" required />
           </div>
-          <a class="left carousel-control" href="#pfCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-          <a class="right carousel-control" href="#pfCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+          <div class="col-sm-6">
+            <input class="form-control input-lg" type="email" placeholder="Email" required />
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- MI LADO FRIKI -->
-    <section id="hobbies" class="section section-dark">
-      <div class="container">
-        <h2 class="section-title light">Mi lado friki</h2>
-        <p class="lead text-center">Un guiño a lo que me inspira: terror, anime, Pokémon y Digimon.</p>
-        <div class="row friki-grid">
-          <div class="col-sm-3 col-xs-6"><div class="friki-card"><div class="friki-icon-emoji">⚡</div><h4>Pokémon</h4></div></div>
-          <div class="col-sm-3 col-xs-6"><div class="friki-card"><div class="friki-icon-emoji">🔷</div><h4>Digimon</h4></div></div>
-          <div class="col-sm-3 col-xs-6"><div class="friki-card"><i class="fa fa-ghost friki-fa"></i><h4>Terror</h4></div></div>
-          <div class="col-sm-3 col-xs-6"><div class="friki-card"><i class="fa fa-film friki-fa"></i><h4>Anime</h4></div></div>
+        <div class="row mt-15">
+          <div class="col-sm-12">
+            <textarea class="form-control input-lg" rows="5" placeholder="Mensaje" required></textarea>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="text-center mt-20">
+          <button class="btn btn-success btn-lg" type="submit">Enviar</button>
+        </div>
+      </form>
 
-    <!-- CONTACTO -->
-    <section id="contact" class="section section-dark">
-      <div class="container">
-        <h2 class="section-title light">Contacto</h2>
-        <form>
-          <div class="form-group"><input type="text" class="form-control" placeholder="Nombre"></div>
-          <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
-          <div class="form-group"><textarea class="form-control" rows="5" placeholder="Mensaje"></textarea></div>
-          <button class="btn btn-success">Enviar</button>
-        </form>
+      <div class="text-center mt-20">
+        <a href="./assest/CV-2025.png" class="btn btn-info" download="CV-2025.png">📄 Descargar CV</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" class="btn btn-default" target="_blank" rel="noopener">🌐 Portfolio Online</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container text-center">
-      <p>&copy; <span id="year"></span> Eduardo Ariza Reillo</p>
+      <small>© <span id="year"></span> Eduardo Ariza Reillo</small>
     </div>
   </footer>
 
-  <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="script.js" defer></script>
+  <!-- jQuery → Bootstrap → tu JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="./script.js?v=3"></script>
 </body>
 </html>
