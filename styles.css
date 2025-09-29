@@ -219,3 +219,45 @@ img{max-width:100%; height:auto;}
 
 .friki-icon-emoji { font-size: 42px; }
 .friki-fa { font-size: 42px; color:#ff5555; }
+
+/* === Skills Section === */
+.skills-grid { margin-top: 20px; }
+.skill-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.skill-card h4 {
+  margin: 12px 0 16px;
+  font-weight: 700;
+}
+.skill-icon {
+  font-size: 42px;
+  color: #38b38a;
+  margin-bottom: 10px;
+}
+
+/* Tags estilo “chips” */
+.skill-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skill-tags li {
+  display: inline-block;
+  margin: 4px 4px;
+  padding: 6px 12px;
+  background: #eef2f5;
+  border-radius: 999px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 1px solid #e1e7ee;
+}
+
